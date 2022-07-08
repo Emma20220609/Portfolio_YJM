@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+		<title>Datalab Company</title>
+		<link href="./css/style.css" rel="stylesheet">
+		<script src="./js/jquery-3.6.0.js"></script>
+		<script src='//code.highcharts.com/highcharts.js?ver=1.0.0' id='highcharts-js'></script>
+		<script src='./js/companychart.js'></script>
+	</head>
+	<body>
+<!-- start ==================== header ==================== -->
+		<div class="header">
+			<div class="one"><img src="./images/logo.png" width="120px" height="120px" alt="이것은 로고입니다."></div>
+			<div class="two"><h1>DataLab</h1></div>
+		</div>
+<!-- end ====================== header ==================== -->
+<!-- start ==================== nav ======================= -->
+		<nav>
+		<ul>
+<!--
+			<li class="dropdown">
+				<div class="dropdown-menu">랭킹</div>
+				<div class="dropdown-content">
+					<a href="#">인기언어 순위</a>
+				</div>
+			</li>
+-->
+			<li class="dropdown">
+				<div class="dropdown-menu">개발자 트랜드</div>
+				<div class="dropdown-content">
+					<a href="#">커뮤니티별</a>
+					<a href="#">채용사이트</a>
+					<a href="#">포털사이트</a>
+				</div>
+			</li>
+			<li class="dropdown">
+				<div class="dropdown-menu">기업 채용 트랜드</div>
+				<div class="dropdown-content">
+					<a href="#">C</a>
+					<a href="#">C#</a>
+					<a href="#">C++</a>
+					<a href="#">Java</a>
+				</div>
+			</li>
+			<li class="dropdown">
+				<div class="dropdown-menu">문의하기</div>
+				<div class="dropdown-content">
+					<a href="procontact.html">E-mail</a>
+				</div>
+			</li>
+			<li class="home"><a href="index.html">Home</a></li>
+		</ul>
+	</nav>
+<!-- end ====================== nav ======================= -->
+<!-- start ==================== content =================== -->
+ <div class="contents">
+	    <div class="">
+	    <div class="card">
+		 	<h2>Contact Us</h2>
+		        
+        <!-- 이메일 문의 폼 -->
+		<table>
+			<tr>
+				<td style="width:200px" valign="top"></td>
+				<td style="width:200px"></td>
+				<td>	
+					<form name="contact" method="post" action="contactok.html" onsubmit="return DoCheck();">
+						<table border="0" style="width:85%; margin:0px 0px 0px 0px;padding:0px 0px 0px 250px ; border: 1px;">
+							<tr>
+								<td style="width:120px; text-align:left; height:35px;">Name</td>
+							</tr>
+							<tr>
+								<td><input type="text" name="title" style="width:500px; height:50px"></td>
+							</tr>
+							<tr>
+								<td style="width:120px; text-align:left; height:35px;">Email Address</td>
+							</tr>					
+							<tr>
+								<td><input type="text" name="title" style="width:100%; height:50px"></td>
+							</tr>
+							<tr>
+								<td style="width:120px; text-align:left;">Message</td>
+							</tr>
+							<tr>
+								<td><textarea name="note" style="width:100%; height:200px;"></textarea></td>
+							</tr>
+							
+							<tr>
+								<td style="padding: 0px 0px 0px 210px;" colspan="2">
+									<div style="height:30px;"></div>
+									<input id="b" type="submit" value="문의하기">
+									<div style="height:30px;"></div>
+								</td>
+							</tr>
+						</table>					
+					</form>	
+				</td>
+			</tr>
+		</table>			
+    	</div>
+ 	</div>
+ 	 
+ </div> 
+<!-- end ====================== content =================== -->
+<!-- start ==================== FOOTER ==================== -->
+	<div class="footer">
+		<p>2022 DataLab Company<br>
+		572, Baekje-daero, Deokjin-gu, Jeonju-si, Jeollabuk-do, Republic of Korea<br>
+		Copyrightⓒ2022  All rights reserved.</p>
+	</div>
+<!-- end ====================== FOOTER ==================== -->
+<!--	<script>
+		$(".nav li").hover(function(){
+			$(this).children("ul").stop().slideToggle(500)
+		})
+	</script> -->
+	</body>
+</html>

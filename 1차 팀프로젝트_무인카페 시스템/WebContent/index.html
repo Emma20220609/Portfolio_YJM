@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CTEAM team project nav</title>
+	<link rel="stylesheet" type="text/css" href="./show/test.css">
+	<script src="./show/common.js"></script>
+	<script src="./show/jquery.js"></script>
+</head>
+<body>
+	<div class="nav">
+		<ul>
+			<li class="list active">
+				<a href="./HOME/index.jsp" target="_blank">
+					<span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+					<span class="text">Home</span>
+				</a>
+			</li>
+			<li class="list">
+				<a href="./KIOSK/index.jsp" target="_blank">
+					<span class="icon"><ion-icon name="cafe-outline"></ion-icon></span>
+					<span class="text">KIOSK</span>
+				</a>
+			</li>
+			<li class="list">
+				<a href="./METAORDER/index.jsp" target="_blank">
+					<span class="icon"><ion-icon name="phone-portrait-outline"></ion-icon></span>
+					<span class="text">Metaoder</span>
+				</a>
+			</li>
+			<li class="list">
+				<a href="./POS/index.html" target="_blank">
+					<span class="icon"><ion-icon name="desktop-outline"></ion-icon></span>
+					<span class="text">POS</span>
+				</a>
+			</li>
+			<div class="indicator"></div>
+		</ul>
+	</div>
+	<script>
+		var list = document.querySelectorAll('.list');
+		function activeLink(){
+			list.forEach((item) => item.classList.remove('active'));
+			this.classList.add('active');
+		}
+		list.forEach((item) =>
+		item.addEventListener('mouseover', activeLink));
+	</script>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+@charset "EUC-KR";
+
+body
+{
+	background-color:#C9D6E3;	
+}
+
+table
+{
+	background-color:white;
+}
+#td
+{
+	text-align:center;
+	height:40px;
+	font-size:16px;
+}
+
+.submenu
+{
+	font-color:#1D1FAB;
+	font-size:17px;
+	height: 40px;	
+	text-align: center;
+	padding: 0px 0px 10px 70px;			
+}
+
+.submenu:hover
+{
+	background-color: #CEDCE5;
+}
+
+ul
+{
+	background-color: white;
+	list-style-type:none;
+	margin: 0;
+	padding: 3;
+	overflow: hidden;
+		
+}
+li{float: left;}
+li a 
+{
+	display:block;
+	background-color: white;
+	color: black;
+	padding: 10px 40px 10px  40px;
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+}
+li a:hover
+{
+	background-color: #7AA5D2;
+	color: white;
+}
+#b
+{
+	width:70px;
+	height:30px;
+	background-color:#336090;
+	color:white;
+	border: 1px solid black;
+	border-radius: 6px;
+}
+#btn
+{
+	background-color:#336090;
+	color:white;
+	border: 1px solid black;
+	border-radius: 6px;
+}
+#up:hover
+{
+	position:relative;
+	bottom:30px;
+	left:30px;
+	background-color:orange;
+	color:black;
+}
+
+#write
+{
+	background-color: #598EC6;
+	color: white;
+	padding: 5px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 6px
+}
+
+a:link
+{
+	text-decoration: none;
+}
+
+#tr:hover
+{
+	background-color:#FFFCCC;
+}
+
+#btn
+{
+	box-shadow:inset 0px 0px 15px 3px #54a3f7;
+	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	background-color:#007dc1;
+	border-radius:17px;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	padding:5px 7px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #154682;
+}
+
+#btn:hover 
+{
+   background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	background-color:#0061a7;
+}
+
+#joinbtn
+{
+	box-shadow:inset 0px 0px 15px 3px #54a3f7;
+	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	background-color:#007dc1;
+	border-radius:17px;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	padding:5px 7px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #154682;
+}
+
+#joinbtn:hover 
+{
+  background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	background-color:#0061a7;
+}
+#loginbtn
+{
+	box-shadow:inset 0px 0px 15px 3px #54a3f7;
+	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	background-color:#007dc1;
+	border-radius:17px;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	padding:5px 7px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #154682;
+}
+
+#loginbtn:hover 
+{
+  background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	background-color:#0061a7;
+}
+
+#logoutbtn
+{
+	box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	background:linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+	background-color:#ffc477;
+	border-radius:6px;
+	border:1px solid #eeb44f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:3px 5px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #cc9f52;
+}
+
+#logoutbtn:hover 
+{
+  background:linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+	background-color:#fb9e25;
+}
+

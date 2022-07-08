@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<script src="./js/jquery-3.6.0.js"></script>
+		<script src='./js/highcharts.js'></script>
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://code.highcharts.com/highcharts.src.js"></script>
+		
+	</head>
+	<body>
+	<div id="wanted" style="width: 600px; height: 400px; margin: 0 auto"></div>
+	<script>
+	$(document).ready(function() {
+		var title = {
+			text: '채용공고 사이트별 언어 선호도'   
+		};
+		var subtitle = {
+			text: 'Cteam'
+		};
+		var xAxis = {
+			categories: ['C', 'C++', 'C#', 'Java', 'JavaScript', 'Python', 'VB']
+		};
+		var yAxis = {
+			title: {
+			text: '선호도'
+		},
+		plotLines: [{
+			value: 0,
+			width: 1,
+			color: '#808080'
+		}]
+	};
+	
+	var tooltip = {
+		valueSuffix: '곳'
+	}
+	
+	var legend = {
+		layout: 'vertical',
+		align: 'right',
+		verticalAlign: 'middle',
+		borderWidth: 0
+	};
+	
+	var series =  [
+		{
+			name: 'JumpIt',
+			data: [335, 226, 236, 1082, 766, 653, 0	]
+		},
+		{
+			name: 'Wanted',
+			data: [52.0, 169.0, 95.0, 688.0, 784.0, 746.0, 0]
+		}
+	];
+	
+	var json = {};
+	
+	json.title = title;
+	json.subtitle = subtitle;
+	json.xAxis = xAxis;
+	json.yAxis = yAxis;
+	json.tooltip = tooltip;
+	json.legend = legend;
+	json.series = series;
+	
+	$('#wanted').highcharts(json);
+	});
+	</script>
+	</body>
+</html>

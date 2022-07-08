@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+* {
+	margin: 0rem;
+	padding: 0rem;
+	border-spacing: 0;
+	border-collapse: collapse;
+	text-decoration:none;
+	font: size 1rem;
+	font-family:"맑은 고딕";
+}
+body {
+	margin: 0rem;
+	padding: 0rem;
+}
+
+ul { margin: 0rem; padding: 0rem; width: 100px; border: 0.05rem solid #305496; list-style: none; }
+li { margin: 0rem; padding: 0rem; width: 100px; height: 30px; border: 0.05rem solid #305496; list-style: none; }
+
+.SM 		{
+				width: 100px;
+				border: 0.1rem solid; display:flex; align-items: center; flex-direction: column;}
+
+.HEAD 		{  text-align:right; color:white; 	background:#305496; }
+.ad_po 		{ color:#C65911; }
+
+.lv1 		{ color:white; 	background:#8EA9DB; border-collapse:collapse;}
+.lv1_S 		{ color:white; 	background:#203764; }
+
+.lv2 		{ color:#4472C4; 	text-align:right; 	background:#D9E1F2;}
+.lv2_S 		{ color:#305496; 	text-align:right; }
+
+.DATE 		{ width: 100px; color:white; 	border-top:none; background:#305496;}
+.TIME 		{ width: 100px; color:white; 	border-top:none; 	border-right:.5pt solid #305496; 	border-bottom:.5pt solid #305496;
+	border-left:.5pt solid black;
+	background:#305496;}
+
+.SM>ul>li>ul{
+	display:none;
+}
+.SM>ul>li:hover>ul{
+	display: inline-block;
+}

@@ -1,0 +1,238 @@
+@charset "EUC-KR";
+
+
+header
+ {
+    position: fixed; 
+    width: 100%; height:200px;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-bottom-color: #009490;
+    color: gray;
+    text-align:right;
+    background-color:white;
+}
+
+	
+#menuspan
+{
+ position:relative;
+
+ 
+}
+
+#menuspan  a  
+{
+ color: gray;
+ text-align:right;
+ margin-left:10px;
+ margin-right:10px;
+ text-decoration : none;
+}
+#menuspan :hover
+{
+color:#ff0000; transition:all .3s ease
+}
+
+#menuspan :hover::after{
+  content: '';
+  width: 100%;
+  left: 0px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  margin-top: 3px;
+  border-bottom: 2px solid #ff0000;;
+  transition:all .3s ease;
+}			
+	
+.logo{
+
+	position: relative; /* 본래위치에서 얼마나  떨어질지..*/
+	top : 10px;
+	margen-top:0px;
+	margin-left:40px;
+}
+
+.page_path .arr {
+	padding-left:6px;
+	margin:0 10px;
+	background:url("../image/path_arr.png") no-repeat ;
+}	
+	
+.menuspan
+{
+	position:relative;
+	padding-top: 20px;
+	padding-right: 50px;
+	padding-bottom: 20px;
+	padding-left: 10px;	
+ 
+}
+
+.menuspan a{
+ text-decoration : none;
+  color: gray;
+}
+
+.menuspan a:hover{
+   color:#4e85d8; transition:all .3s ease
+}
+
+.menuspan a:hover::after{
+  content: '';
+  width: 100%;
+  left: 0px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  margin-top: 3px;
+  border-bottom: 2px solid #ffffff;;
+  transition:all .3s ease;
+}			
+	
+	
+	
+	
+	
+	
+#menubar{
+	 background: white; 
+	 text-align:right;
+	 padding: 230px 1200px 30px 0px;
+}
+#menubar ul{
+	width : 90%; 
+	text-algin :center;
+}
+#menubar ul li
+{
+	display : inline-block;  list-style-position:inside;
+}
+#menubar ul li a 
+{
+	color : gray; text-decoration : none;
+}
+	
+hr{
+    margin-top:30px;
+    width: 100%; height:2px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #009490;
+    border-right-color: #009490;
+    border-bottom-color: #009490;
+    border-left-color: #009490;
+    background-color: #009490;
+}
+
+
+
+   .logo>a>img
+   {
+   	 width:150px;
+   	 height:150px;
+   }
+<!--   
+ .mainContent
+ {	
+    max-width: 1400px;
+    box-sizing: border-box;
+    padding-right: 1rem;
+    padding-left: 5rem;
+	margin-left:auto;
+	margin-right:auto;
+ 	 
+ 	 /*<width: 100%;
+ 	 height:300px;
+ 	 text-align: center;
+ 	 */
+ } -->  
+   div h3 
+   {
+       	background-color: rgba(1,1,1,0.5); 
+       	color: white; 
+        padding:0 0;  
+        
+ 	}
+ 	
+.mainmenu tr td a
+   {
+   	color : gray; text-decoration : none;
+   	
+   }
+/* footer 하단 고정 [S] */
+html, body {
+    margin: 0;
+    padding: 0;
+
+}
+
+#body-wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+#body-content {
+    margin-top: 10px;
+    padding-bottom: 150px; /* footer의 높이 */
+}
+
+footer {
+    width: 100%;
+    height: 150px; /* footer의 높이 */  
+    bottom: 0;
+    left: 0;
+    background-color:#009490;
+    text-algin : center;
+}
+/* footer 하단 고정 [E] */
+ footer:p
+ {
+ 	 text-algin : center;
+ 	
+ }
+ 
+ p
+{
+text-align: center;
+  margin: 30px;
+}
+.submenu>a
+{
+	text-align: center;
+	background-color:#009490;
+	text-decoration : none;
+}
+.submenu
+{
+	text-align: center;
+	background-color:#white;
+	color:black;
+	text-decoration : none;
+}
+
+#b
+{
+	width:70px;
+	height:30px;
+	background-color:#008080;
+	color:white;
+	border: 1px solid black;
+	border-radius: 6px;
+}
+
+.lantable
+{
+	margin-left:auto; 
+	margin-right:auto;
+}
+.logo
+{
+
+	width:205px;
+	height:100px
+	
+}

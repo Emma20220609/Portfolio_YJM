@@ -1,0 +1,112 @@
+﻿<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Javascript </title>
+        <meta http-equiv="Content-Type" content="application/json; charset=UTF-8" />
+        <link rel="stylesheet" type="text/css" href="css/homework.css"/>
+        <link"D:/hanok/team/2ndProject/data/data_value.json" rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
+        
+        <script language="javascript" type="text/javascript" src="./js/homework.js"></script>
+        <script language="javascript" type="text/javascript" src="./js/jquery.min.js"></script>
+        <script language="javascript" type="text/javascript" src="./js/jquery-ui.min.js"></script>
+        <script language="javascript" type="text/javascript" src="./js/highchartss.js"></script>
+        
+    </head>
+    <body>
+        <div id="dvLayer">
+            <div id="dvHeader">
+                <div id="dvTitle">언어별</div>
+                <div id="dvSearchDate">
+                    <input type="text" id="txtStartDate" maxlength="12" />
+                    ~
+                    <input type="text" id="txtEndDate" maxlength="12" />
+                    <input type="submit" id="btnSubmit" value="조회" />
+                </div>
+            </div>
+            <div class="dvSeparator"><hr /></div>
+            <div id="dvSubHeader">
+                <div id="dvSubTitle">&nbsp;</div>
+                <div id="dvSubSearchType">
+                    <div id="dvAge">
+                        <table id="tbAge">
+                            <tr class="header"><td>연령대/연령</td></tr>
+                            <tr>
+                                <td>
+                                    <select id="selAge" class="subSearchType">
+                                        <option id="opAge00" value="0">연도별</option>
+                                        <option id="opAge01" value="1">2018</option>
+                                        <option id="opAge02" value="2">2019</option>
+                                        <option id="opAge03" value="3">2020</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="dvGame">
+                        <table id="tbGame">
+                            <tr class="header"><td>언어</td></tr>
+                            <tr>
+                                <td>
+                                    <select id="selGame" class="subSearchType">
+                                        <option id="opGame00" value="0">전체</option>
+                                        <option id="opGame01" value="1">C</option>
+                                        <option id="opGame02" value="2">C++</option>
+                                        <option id="opGame03" value="3">C#</option>
+                                        <option id="opGame04" value="4">Java</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="dvChartType">
+                        <table id="tbChartType">
+                            <tr class="header"><td>차트</td></tr>
+                            <tr>
+                                <td>
+                                    <select id="selChartType" class="subSearchType">
+                                        <option id="opChartType00" value="column">막대차트</option>
+                                        <option id="opChartType01" value="line">라인차트</option>
+                                        <option id="opChartType02" value="pie">파이차트</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="dvChart"></div>
+            <div class="dvSeparator"><hr /></div>
+            <div id="dvOutput"><table id="tbContents"></table></div>
+        </div>
+        
+        <script>
+        
+            $(document).ready(function() {
+
+                initControl();
+
+                bindData();
+
+                $("#btnSubmit").click(function(event) {
+                    sDate = $("#txtStartDate").val();
+                    eDate = $("#txtEndDate").val();
+                    selectedAge = $("#selAge").val();
+                    selectedChartType = $("#selChartType").val();
+                    selectedGame = $("#selGame").val();
+                    bindData();
+                });
+
+                $("#selAge, #selChartType, #selGame").change(function(event) {
+                    sDate = $("#txtStartDate").val();
+                    eDate = $("#txtEndDate").val();
+                    selectedAge = $("#selAge").val();
+                    selectedChartType = $("#selChartType").val();
+                    selectedGame = $("#selGame").val();
+                    selectedChartType = $("#selChartType").val();
+                    bindData();
+                });
+            });
+            
+        </script>
+    </body>
+</html>

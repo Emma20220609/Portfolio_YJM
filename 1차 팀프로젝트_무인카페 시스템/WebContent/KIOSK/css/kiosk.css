@@ -1,0 +1,130 @@
+@charset "UTF-8";
+	
+	#indexbar
+	{
+		font-size:30px
+	}
+	#abtn 
+	{
+		text-decoration: none;
+		background-color: #0C1F45;
+		border:dotted;
+		color: maroon;
+		padding:80px 300px 80px 300px ;
+		text-align: center;
+		display: inline-block;
+		border-radius: 20px 20px 20px 20px;
+	}
+	#abtn:hover, #abtn:active 
+	{
+		background-color: #471214;
+	}
+		
+	body
+	{
+		background-color:#0C1F45;	
+	}
+	
+	#login
+	{
+		background-color:white;
+		border:1px solid #0C1F45;
+		border-radius:16px;
+		box-shadow:inset 0 0 8px #0C1F45;
+	}
+	#bar
+	{
+		background-color:#0C1F45;
+		color:white;
+		font-size:30px;
+		font-weight:bold;
+	}
+	#menu
+	{
+		background-color: #0C1F45;
+		text-decoration: none;
+		padding: 50px 110px;
+		border-radius: 10px 10px 0px 0px;
+		box-shadow:inset 0 0 8px white;
+		font-weight:bold;
+	}
+	#menu:hover
+	{
+		background-color: #471214;
+	}
+	#yes
+	{
+		text-decoration: none;
+		background-color: #00055A;
+		color: white;
+		padding: 10px 40px;
+		text-align: center;
+		display: inline-block;
+		border-radius: 20px 20px 20px 20px;
+		font-size:25px;
+	}
+	#no
+	{
+		text-decoration: none;
+		background-color: #44000A;
+		color: white;
+		padding: 10px 40px;
+		text-align: center;
+		display: inline-block;
+		border-radius: 20px 20px 20px 20px;
+		font-size:25px;
+	}
+	
+	#optbtn
+	{ 
+		background-Color:#0C1F45;  
+		font:12px;   
+		font-weight:bold; 
+		color:white;  
+		border-radius: 10px 10px 10px 10px;
+		font-size:20px;
+	}
+	#optbtn:hover
+	{
+		background-Color:#085820;
+	}
+	#optbtn:visited
+	{
+		background-Color:#085820;
+	}
+	#mypagebtn
+	{
+		text-decoration: none;
+		background-color: white;  
+		color:black; 
+		padding: 10px 20px;                              
+		display: inline-block;
+		border-radius: 20px 20px 20px 20px;
+		font-weight:bold;
+		font-size:15px
+	}
+	
+	#orderbtn
+	{
+		text-decoration: none;
+		background-color: white;
+		color: black;
+		padding: 30px 190px;                                
+		display: inline-block;
+		border-radius: 10px 10px 10px 10px;;
+		font-weight:bold;
+		font-size:30px
+	}
+	#cancelbtn
+	{
+		text-decoration: none;
+		background-color: #660010;
+		color: white;
+		padding: 60px 100px;                                
+		display: inline-block;
+		border-radius: 10px 10px 10px 10px;;
+		font-weight:bold;
+		font-size:30px;
+	}
+	
+	
